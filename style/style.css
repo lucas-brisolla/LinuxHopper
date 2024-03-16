@@ -1,6 +1,85 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&display=swap');
+
+:root{
+    --formal:"Montserrat", sans-serif;
+    --styled:"Protest Riot", sans-serif;
+    --black:#0D0D0D;
+    --purple:#472DA6;
+    --blue: #4F22F2;
+    --yellow: #F2D541;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
+body{
+    font-family: var(--formal);
+}
 
+.banner{
+    display: flex;
+    background-image: url('../images/bannerbg.jpg') ;
+    color: white;
+    padding: 25px;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.flex-nav{
+    display: flex;
+
+}
+
+li{
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+}
+
+.sign-up{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.sign-up:hover{
+    background-color: white;
+    color: var(--black);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.banner-article{
+    font-size: 2em;
+}
+
+.banner-article > h1{
+    font-family: var(--styled);
+}
+
+footer{
+    background-color: var(--black);
+    color: white;
+}
+
+.main{
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
